@@ -1,0 +1,41 @@
+name: minhas_notas
+description: Controle local de notas de lotes, cores, tamanhos e PDFs.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  sqflite: ^2.4.5
+  path: ^1.9.1
+  intl: ^0.20.3
+  pdf: ^3.13.1
+  printing: ^5.15.1
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.4.5
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  adaptive_icon_background: '#19364E'
+  adaptive_icon_foreground: assets/icon/app_icon.png
+  min_sdk_android: 24
+  remove_alpha_ios: true
